@@ -1012,29 +1012,7 @@
             modal.classList.add('active');
             return;
         }
-        if (n === 3) {
-            content.innerHTML = `
-                <div class="gallery-container">
-                    <h2>Look at this cutie 🥰</h2>
-                    <div class="photo-grid">
-                        ${[
-                        ['demo1','Sweet Hello'],
-                        ['demo2','That Smile'],
-                        ['demo3','Perfect Day'],
-                        ['demo4','Only Us'],
-                        ['demo5','My Home'],
-                        ['demo6','Forever Us']
-                    ].map(([file, cap]) => `
-                        <div class="photo-card">
-                            <div class="photo-frame">
-                                <img src="assets/${file}.jpg" onerror="this.src='assets/${file}.png';this.onerror=null;" alt="${cap}" class="gallery-photo">
-                            </div>
-                            <p class="photo-caption">${cap}</p>
-                        </div>`).join('')}
-                    </div>
-                    <button class="next-btn" onclick="closeModal()">Close ♡</button>
-                </div>`;
-            modal.classList.add('active');
+        
             return;
         }
     }
